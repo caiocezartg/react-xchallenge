@@ -8,12 +8,14 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
+import useForm from "../../hooks/useForm";
 
 const FormLogin = () => {
-  const [user, setUser] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+
+  const user = useForm("");
+  const email = useForm("email");
+  const password = useForm("password");
 
   return (
     <Box
@@ -39,8 +41,8 @@ const FormLogin = () => {
           fullWidth
           required
           margin="normal"
-          onChange={({ target }) => setUser(target.value)}
-          value={user}
+          {...user}
+          helperText={user.error ?? user.error}
         />
 
         <TextField
@@ -50,8 +52,8 @@ const FormLogin = () => {
           fullWidth
           required
           margin="normal"
-          onChange={({ target }) => setEmail(target.value)}
-          value={email}
+          {...email}
+          helperText={email.error ?? email.error}
         />
 
         <TextField
@@ -70,8 +72,8 @@ const FormLogin = () => {
               </InputAdornment>
             ),
           }}
-          onChange={({ target }) => setPassword(target.value)}
-          value={password}
+          {...password}
+          helperText={password.error ?? password.error}
         />
 
         <Button
