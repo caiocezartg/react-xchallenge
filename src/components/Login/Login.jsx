@@ -14,16 +14,18 @@ const Login = () => {
               backgroundColor: "#FFF",
               padding: 3,
               borderRadius: 2,
+              marginTop: 2,
               boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.35)",
             }}
           >
-            <Grid container>
-              <Grid item xs={12} md={6}>
-                <Box
-                  sx={{
-                    p: 3,
-                  }}
-                >
+            <Grid container alignItems="center">
+              <Grid
+                item
+                xs={12}
+                md={6}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <Box padding={3}>
                   <img src={LogoXtrategie} alt="Logo Xtrategie" />
                 </Box>
               </Grid>
@@ -32,6 +34,16 @@ const Login = () => {
               </Grid>
             </Grid>
           </Box>
+        </Grid>
+
+        <Grid item xs={12} textAlign="center">
+          <footer>
+            <p>
+              &copy; Software Powered by Xtrategie - Developed by Caio Cezar.{" "}
+              <br />
+              2009 - {new Date().getFullYear()}.
+            </p>
+          </footer>
         </Grid>
       </Grid>
     </Container>

@@ -4,11 +4,13 @@ import {
   Typography,
   InputAdornment,
   IconButton,
+  Button,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
 
 const FormLogin = () => {
+  const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -16,7 +18,7 @@ const FormLogin = () => {
   return (
     <Box
       sx={{
-        p: 3,
+        p: { xs: 0, md: 3 },
         borderLeft: { xs: "none", md: "1px solid rgba(0,0,0, 0.2)" },
       }}
     >
@@ -30,6 +32,17 @@ const FormLogin = () => {
       </Typography>
 
       <form action="">
+        <TextField
+          type="text"
+          label="Nome de usuário"
+          variant="filled"
+          fullWidth
+          required
+          margin="normal"
+          onChange={({ target }) => setUser(target.value)}
+          value={user}
+        />
+
         <TextField
           type="email"
           label="E-mail"
@@ -60,6 +73,14 @@ const FormLogin = () => {
           onChange={({ target }) => setPassword(target.value)}
           value={password}
         />
+
+        <Button
+          variant="outlined"
+          size="large"
+          sx={{ width: "100%", marginTop: "20px" }}
+        >
+          ENTRAR
+        </Button>
       </form>
     </Box>
   );
