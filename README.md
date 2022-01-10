@@ -30,14 +30,14 @@ Linux e macOS:
 ```
 cd react-xchallenge
 
-npm install OU yarn
+npm install OU yarn install
 ```
 
 Windows:
 ```
 cd react-xchallenge
 
-npm install OU yarn
+npm install OU yarn install
 ```
 
 [⬆ Voltar ao topo](#react-xchallenge)<br>
