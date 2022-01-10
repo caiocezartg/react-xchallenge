@@ -26,7 +26,11 @@ const Login = () => {
                 sx={{ display: "flex", justifyContent: "center" }}
               >
                 <Box padding={3}>
-                  <img src={LogoXtrategie} alt="Logo Xtrategie" />
+                  <img
+                    src={LogoXtrategie}
+                    alt="Logo Xtrategie"
+                    style={{ maxWidth: "100%" }}
+                  />
                 </Box>
               </Grid>
               <Grid item xs={12} md={6}>
