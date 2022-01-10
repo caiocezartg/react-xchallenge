@@ -8,7 +8,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/caiocezartg/react-xchallenge?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/caiocezartg/react-xchallenge?style=for-the-badge)
 
-<img src="./src/assets/exemplo-reactjs-xtrategie" alt="exemplo imagem">
+<img src="./src/assets/exemplo-reactjs-xtrategie.png" alt="exemplo imagem">
 
 > Projeto para o processo seletivo da Xtrategie utilizando ReactJS com a biblioteca Material UI para a estilização e construção dos componentes.
 
